@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left 1s;
+}
+
+.page-with-navbar {
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-with-navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: margin-left 1s;
+}
+
+.page-with-navbar {
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-with-navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+}

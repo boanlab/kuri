@@ -1,22 +1,15 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import UploadBar from "./UploadBar";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "../scss/NavbarComponent.scss";
-import Main from "../Main";
-<<<<<<< HEAD
-import Pods from "./PodInside/Pods";
-import UploadFiles from "../UploadFiles";
-import Login from "../Login";
-=======
-import Pods from "../Pods";
->>>>>>> parent of e7ed5a8 (UI with Sidebar)
-function NavbarComponent() {
+import "../scss/UploadBarComponent.scss";
+
+function UploadBarComponent() {
   const [navVisible, showNavbar] = useState(false);
 
   return (
     <BrowserRouter>
       <div className="NavbarComponent">
-        <Navbar visible={navVisible} show={showNavbar} />
+        <UploadBar visible={navVisible} show={showNavbar} />
         <Routes>
           <Route path="/" element={<Navigate to="/main" />} />
           <Route
@@ -61,4 +54,4 @@ function NavbarComponent() {
   );
 }
 
-export default NavbarComponent;
+export default UploadBarComponent;

@@ -1,8 +1,8 @@
 .node-info-container {
   position: absolute;
+  bottom: 0;
   right: 0;
-  top: 0;
-  min-width: 10px;
+  width: 300px;
   min-height: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 5px solid gray;
@@ -13,17 +13,13 @@
   align-items: center;
 
   .node-info {
-    h1 {
-      font-size: 30px;
-      text-align: center;
-    }
     h2 {
       font-size: 30px;
       margin: 0;
     }
 
     p {
-      font-size: 20px;
+      font-size: 25px;
       margin-top: 30px;
     }
   }

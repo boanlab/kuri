@@ -1,4 +1,4 @@
-import "./scss/UploadFiles.scss";
+import "./scss/Main.scss";
 import React, { useState } from "react";
 
 import FileUpload from "./UserYaml/FileUpload";
@@ -70,6 +70,10 @@ function Version1() {
           <p className="TockenHost"></p>
           <TockenHost />
         </div>
+      </div>
+
+      <div className="BackToFront">
+        <BackToFront />
       </div>
     </div>
   );

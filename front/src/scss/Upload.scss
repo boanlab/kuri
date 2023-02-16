@@ -1,50 +1,81 @@
 .card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #888888;
-  font-family: "Arial", sans-serif;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border: 10px outset #cbd5e0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  background-color: hsl(210, 38%, 95%);
+  width: 300px;
+  height: 200px;
 
   .inputs {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 1.5em;
 
-    input[type="file"] {
-      display: none;
+    input {
+      position: relative;
+      text-align: right;
+      opacity: 0;
+      z-index: 4;
+      cursor: pointer;
+      height: 70px;
+      max-width: 200px;
     }
 
     button {
-      margin: 0;
-      padding: 10px 15px;
-      background-color: #08076a;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 16px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 150%;
+      z-index: 3;
       display: flex;
+      justify-content: center;
       align-items: center;
+
+      color: #fff;
+      background-color: #5f85bb;
+      font-size: 1.1rem;
       cursor: pointer;
 
-      i {
-        margin-right: 10px;
-      }
+      border: none;
+      outline: none;
+      padding: 1em;
+      transition: background-color 0.4s;
+      box-shadow: 0px 8px 24px rgba(149, 157, 165, 10);
 
-      &:hover {
-        background-color: #2581c8;
+      i {
+        width: 3em;
+        height: 3em;
+        padding: 0.4em;
+        background-color: #fff;
+        color: #000000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.8em;
+        font-size: 0.8em;
+      }
+    }
+
+    &:hover {
+      button {
+        background-color: #000000;
       }
     }
   }
+}
 
-  .main {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0 10px;
-  }
+.main {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  font-size: 1.2em;
+}
 
-  .info {
-    font-size: 14px;
-    margin-bottom: 0;
-  }
+.info {
+  font-size: 1rem;
 }

@@ -9,12 +9,6 @@ import {
   FaSignOutAlt,
   FaBars,
 } from "react-icons/fa";
-<<<<<<< HEAD
-import { FiUpload } from "react-icons/fi";
-import { TbChartCircles } from "react-icons/tb";
-import { MdOutlinePolicy } from "react-icons/md";
-=======
->>>>>>> parent of e7ed5a8 (UI with Sidebar)
 import { NavLink } from "react-router-dom";
 import "../scss/navbar.scss";
 
@@ -37,18 +31,7 @@ function Navbar({ visible, show }) {
           {!visible ? <FaAngleRight size={30} /> : <FaAngleLeft size={30} />}
         </button>
         <div>
-<<<<<<< HEAD
-          <NavLink className="logo" to="/main">
-            <img
-              src="https://user-images.githubusercontent.com/113777043/219305022-a306d523-edfc-430e-b465-00094aca2c39.png"
-              alt="Logo"
-            />
-            KURI
-          </NavLink>
-          <h2>Kubenetes Network Policy Simulator</h2>
-=======
           <NavLink className="logo" to="/"></NavLink>
->>>>>>> parent of e7ed5a8 (UI with Sidebar)
           <div className="links nav-top">
             <NavLink to="/main" className="nav-link">
               <FaThLarge size={ICON_SIZE} />
@@ -58,21 +41,9 @@ function Navbar({ visible, show }) {
               <FaChartBar size={ICON_SIZE} />
               <span>Pods </span>
             </NavLink>
-<<<<<<< HEAD
-
-            <NavLink to="/policies" className="nav-link">
-              <MdOutlinePolicy size={ICON_SIZE} />
-              <span>Policies </span>
-            </NavLink>
-
-            <NavLink to="/upload" className="nav-link">
-              <FiUpload size={ICON_SIZE} />
-              <span>Upload</span>
-=======
             <NavLink to="/policies" className="nav-link">
               <FaShoppingCart size={ICON_SIZE} />
               <span>Policies</span>
->>>>>>> parent of e7ed5a8 (UI with Sidebar)
             </NavLink>
           </div>
         </div>

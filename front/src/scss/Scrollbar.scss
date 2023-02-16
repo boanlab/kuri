@@ -1,44 +1,30 @@
 .list {
-  height: 300px;
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
+  position: relative;
 
-  .scrollbar-thumb {
-    background-color: #777;
-  }
+  height: 180px;
+  width: 375px;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 
-  .policy-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  margin-right: 18px;
 
-    p {
-      margin-left: 10px;
-      flex: 1;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 5px outset #cbd5e0;
+  background-color: hsl(210, 38%, 95%);
+}
+::-webkit-scrollbar {
+  width: 18px;
+}
 
-    .actions {
-      display: flex;
+::-webkit-scrollbar-track {
+  background-color: #cfcfcf;
+  border: 8px solid #fff;
+}
 
-      svg {
-        cursor: pointer;
-        margin-left: 10px;
-
-        &:hover {
-          color: red;
-        }
-      }
-    }
-
-    .fa-spinner {
-      animation: spin 2s linear infinite;
-    }
-
-    @keyframes spin {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 4px solid #fff;
 }

@@ -1,7 +1,5 @@
-import React from "react";
-
 import NavbarComponent from "./Sidebar/NavbarComponent";
-
+import React from "react";
 function App() {
   return (
     <div>

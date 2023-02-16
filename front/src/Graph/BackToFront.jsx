@@ -27,31 +27,8 @@ const BackToFront = () => {
     })
   );
 
-  //namespace 별
-  const namespaces = [
-    ...new Set(nodes.map((node) => node.namespace)), // 중복 제거한 namespace 목록
-  ];
-
-  const nodesByNamespace = namespaces.map((namespace) =>
-    nodes.filter((node) => node.namespace === namespace)
-  );
-
-  const [selectedNamespace, setSelectedNamespace] = useState(namespaces[0]);
-  const selectedNamespaceIndex = namespaces.indexOf(selectedNamespace);
-
   return (
     <div>
-      <div className="namespace-buttons">
-        {namespaces.map((namespace, index) => (
-          <button
-            key={index}
-            onClick={() => setSelectedNamespace(namespace)}
-            className={selectedNamespace === namespace ? "active" : ""}
-          >
-            {namespace}
-          </button>
-        ))}
-      </div>
       <NetworkGraph
         nodes={nodes}
         setNodes={setNodes}
